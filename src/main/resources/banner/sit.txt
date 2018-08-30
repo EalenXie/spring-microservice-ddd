@@ -1,0 +1,14 @@
+ ________  ___  _________
+|\   ____\|\  \|\___   ___\
+\ \  \___|\ \  \|___ \  \_|
+ \ \_____  \ \  \   \ \  \
+  \|____|\  \ \  \   \ \  \
+    ____\_\  \ \  \   \ \  \
+   |\_________\ \__\   \ \__\
+   \|_________|\|__|    \|__|
+
+:: Micro + DDD ::  Created by EalenXie  Sit running
+:: This is a basic Micro DDD Demo , base on Spring Boot 1.5.6, Spring Cloud Edgware.SR4 Version.
+:: Please modify this description when you use this demo
+:: (这是一个最基本的基于Spring Boot 1.5.6, Spring Cloud Edgware.SR4版本的微服务微服务+DDD演示例子)
+:: (当你使用这个演示例子时，请修改这个描述)
