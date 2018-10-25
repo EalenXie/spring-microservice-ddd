@@ -13,7 +13,7 @@ import java.io.StringWriter;
  */
 public enum XMLUtil {
 
-    getXMLUtil;
+    ;
 
     /**
      * @param obj   要转换的对象引用(xxx)
