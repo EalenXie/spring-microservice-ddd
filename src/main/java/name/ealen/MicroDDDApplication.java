@@ -8,7 +8,6 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * Created by EalenXie on 2018/8/24 15:16.
  */
 @SpringCloudApplication
-@EnableDiscoveryClient
 public class MicroDDDApplication {
 
     public static void main(String[] args) {
