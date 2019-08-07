@@ -25,11 +25,11 @@ public class ApplicationRunner implements CommandLineRunner {
     public void run(String... strings) {
         Environment environment = applicationContext.getEnvironment();
         try {
-            log.info("Application name : " + environment.getProperty("spring.application.name"));
-            log.info("Eureka defaultZone : " + environment.getProperty("eureka.client.service-url.defaultZone"));
-            log.info("ConfigCenter url : " + environment.getProperty("spring.cloud.config.discovery.service-id"));
+            log.info("Application name : {}", environment.getProperty("spring.application.name"));
+            log.info("Eureka defaultZone : {}", environment.getProperty("eureka.client.service-url.defaultZone"));
+            log.info("ConfigCenter url : {}", environment.getProperty("spring.cloud.config.discovery.service-id"));
         } catch (Exception e) {
-            log.warn("Get Properties Exception : " + e.getMessage());
+            log.warn("Get Properties Exception : {}", e.getMessage());
         }
     }
 }
