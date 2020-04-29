@@ -17,6 +17,7 @@
     
 2. DDD的结构图: 
 
+    ![avatar](https://images2018.cnblogs.com/blog/994599/201808/994599-20180830125911190-468037055.png)
     ![avatar](https://images2018.cnblogs.com/blog/994599/201808/994599-20180830125945668-1072959527.png)
 
 3. 本项目是一个假设已经划分好了业务微服务，设计遵循DDD的架构与角色，代码设计上就分为Infrastructure，Domain，Application，Interfaces，项目结构图如下 : 
