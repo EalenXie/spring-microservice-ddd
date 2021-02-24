@@ -90,7 +90,7 @@ DDD的难题在如何划分领域，如何界定领域的边界，如何找出�
 
 本例中只是笔者总结自身经验写了一些基本样例内容(仅供参考)，有些内容甚至都可以算是个人研发规范，这里写是为了对此微服务DDD结构例子的内容做个填充。
 
-关于装配(Assembler)
+[关于装配(Assembler)](https://github.com/EalenXie/springcloud-microservice-ddd/blob/master/doc/assembler.md)
 
 
 #### 本文参考内容
