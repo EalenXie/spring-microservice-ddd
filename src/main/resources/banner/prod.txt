@@ -1,0 +1,14 @@
+ ________  ________  ________  ________
+|\   __  \|\   __  \|\   __  \|\   ___ \
+\ \  \|\  \ \  \|\  \ \  \|\  \ \  \_|\ \
+ \ \   ____\ \   _  _\ \  \\\  \ \  \ \\ \
+  \ \  \___|\ \  \\  \\ \  \\\  \ \  \_\\ \
+   \ \__\    \ \__\\ _\\ \_______\ \_______\
+    \|__|     \|__|\|__|\|_______|\|_______|
+
+
+:: ${spring.application.name} :: Created by EalenXie , ${spring.profiles.active} Running
+:: SpringBoot Version :: ${spring-boot.version}
+:: Server port :: ${server.port:8080}
+::
+:: ${spring.application.name} PROD 启动

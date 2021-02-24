@@ -1,27 +1,3 @@
 server:
   port: 8088
 
-
----
-spring:
-  profiles: dev
-
-banner:
-  location: banner/dev.txt
-
-
----
-spring:
-  profiles: sit
-
-
-banner:
-  location: banner/sit.txt
-
-
----
-spring:
-  profiles: pro
-
-banner:
-  location: banner/pro.txt
