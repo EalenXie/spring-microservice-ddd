@@ -84,12 +84,12 @@ public class RespBody<T> {
 |<font color='red'>405</font> |Method Not Allowed|请求的HTTP方法不允许|Http Method不正确|
 |415 |Unsupported Media Type|不支持的媒体类型|Content-Type 或 Content-Encoding 不正确|
 |<font color='red'>445</font> |Missing Request Header|缺失必要的请求头(Headers)|接口要求的必传header未传递|
-|<font color='red'>500</font> |Internal Server Error|服务器内部系统未知异常|异常不在其他业务码范围内<br>影响系统正常运行结果的异常|
+|<font color='red'>500</font> |Internal Server Error|服务器内部系统未知异常|异常不在其他响应码及业务码范围内<br>影响系统正常运行结果的异常|
 |502 |Bad Gateway|网关错误|网关发生异常|
 |503 |Service Unavailable|服务不可用|网关访问的服务不可用|
 |504 |Gateway Timeout|网关超时|网关超时|
 |530|Service Connect Exception|服务连接异常|服务器内部连接异常|
-|<font color='red'>550 </font>|NullPointerException|服务器内部空指针异常|通常由于服务器代码中未做非空校验<br>代码缺陷的异常|
+|<font color='red'>550 </font>|NullPointerException|服务器内部空指针异常|通常由于服务器代码中未做非空校验<br>代码缺陷异常|
 |551 |Database Exception|服务器内部数据库发生异常|数据库服务异常|
 |<font color='red'>552 </font>|Sql Exception|服务器内部数据库SQL执行异常|通常是SQL语法不正确所导致|
 
