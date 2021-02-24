@@ -11,8 +11,7 @@ import java.util.TreeMap;
 
 /**
  * @author EalenXie Created on 2020/3/2 13:15.
- * 当发生错误或异常时的对象体
- * 提供基础错误返回对象支持
+ * 当发生错误或异常时的对象体 提供基础错误返回对象支持
  */
 public class ErrorBody {
 
