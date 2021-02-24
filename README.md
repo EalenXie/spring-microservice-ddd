@@ -5,7 +5,7 @@
 
 这是一个基本的微服务 + DDD演示例子(待完善)，基于 Spring Boot 2.2.4.RELEASE
 
-结构例子(2021-02-24,待完善),目前暂时写了Infrastructure层和Interfaces层的样例内容。
+结构例子(待完善),目前(2021-02-24)暂时写了Infrastructure层和Interfaces层的样例内容。
 
 微服务 + DDD，个人觉得应该是首先是从微服务的角度(如何划分微服务)考虑去划分大的业务模块，每一个微服务都应该是一个可以单独部署，各司其职的模块；
 
@@ -93,7 +93,6 @@ DDD的难题在如何划分领域，如何界定领域的边界，如何找出�
 本例中只是笔者总结自身经验写了一些基本样例内容(仅供参考)，有些内容甚至都可以算是个人研发规范，这里写是为了对此微服务DDD结构例子的内容做个填充。
 
 [关于装配(Assembler)](https://github.com/EalenXie/springcloud-microservice-ddd/blob/master/doc/assembler.md)
-
 
 #### 本文参考内容
 
