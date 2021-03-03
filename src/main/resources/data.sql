@@ -1,0 +1,10 @@
+insert into merchant values (1,'无聊科技公司','有限责任公司','张三',current_date );
+insert into merchant values (2,'红旗连锁店','个体工商户','李四',current_date );
+insert into store values (1,'无聊科技公司成都分公司','成都市武侯区','09:00 - 18:00','1232456754544');
+insert into store values (2,'无聊科技公司广州分公司','广州市天河区','09:00 - 18:00','1232456754544');
+insert into store values (3,'红旗连锁金牛便利店','成都市金牛区','09:00 - 18:00','1232456754544');
+insert into store values (4,'红旗连锁青羊便利店','成都市青羊区','09:00 - 18:00','1232456754544');
+insert into merchant_store_rel values (1,1);
+insert into merchant_store_rel values (1,2);
+insert into merchant_store_rel values (2,3);
+insert into merchant_store_rel values (2,4);

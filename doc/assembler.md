@@ -66,6 +66,7 @@ public class AssemblerFactory {
      *
      * @param assembler 装配
      * @param source    S对象
+     * @param tClass    T Class
      * @return 转换出 T新对象
      */
     public <S, T> T convert(Assembler<S, T> assembler, S source, Class<T> tClass) {

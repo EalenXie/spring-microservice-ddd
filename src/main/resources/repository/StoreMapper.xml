@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.github.domain.repository.StoreMapper">
+
+
+    <select id="getStoresByMerchantById" resultType="com.github.domain.entity.Store" parameterType="Long">
+
+        select s.*
+        from merchant_store_rel rel
+                 inner join store s on rel.store_id = s.store_id
+        where rel.merchant_id = #{merchantId}
+
+
+    </select>
+
+
+</mapper>

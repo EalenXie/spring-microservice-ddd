@@ -235,6 +235,7 @@ public class GlobalFacadeAdvice {
         }
         errorBody.getMetadata().put("errorList", dataList);
         int length = 100;
+        // 提示大于100个字符就取参数错误提示
         if (defaultMessage == null || defaultMessage.length() > length) {
             defaultMessage = BAD_REQUEST.getMessage();
         }

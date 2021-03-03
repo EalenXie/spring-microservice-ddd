@@ -1,3 +1,13 @@
 server:
   port: 8088
 
+# mybatis-plus 框架配置
+mybatis-plus:
+  configuration:
+    call-setters-on-nulls: true
+    map-underscore-to-camel-case: true
+    jdbc-type-for-null: "null"
+  global-config:
+    db-config:
+      update-strategy: ignored
+  mapper-locations: classpath:/repository/**.xml

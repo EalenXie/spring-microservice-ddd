@@ -1,0 +1,17 @@
+[
+  {
+    "channel": "AliPay",
+    "value": 0.001,
+    "remarks": "支付宝费率"
+  },
+  {
+    "channel": "WeChat",
+    "value": 0.002,
+    "remarks": "微信支付"
+  },
+  {
+    "channel": "UnionPay",
+    "value": 0.003,
+    "remarks": "银联支付"
+  }
+]

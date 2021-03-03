@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.github.domain.repository.MerchantMapper">
+
+
+    <select id="checkMerchantName" resultType="Integer">
+        select count(0) from mechant
+        where mechant_name=#{merchantName}
+        <if test="exclude != null">
+            and mechant_id not in
+            <foreach collection="exclude" item="id" index="index" open="(" close=")" separator=",">
+                #{id}
+            </foreach>
+        </if>
+    </select>
+
+</mapper>

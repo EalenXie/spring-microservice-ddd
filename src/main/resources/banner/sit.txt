@@ -11,4 +11,4 @@
 :: SpringBoot Version :: ${spring-boot.version}
 :: Server port :: ${server.port:8080}
 ::
-:: ${spring.application.name} SIT 启动
+:: ${spring.application.name} ${spring.profiles.active} 启动
