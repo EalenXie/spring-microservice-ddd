@@ -12,7 +12,7 @@ import javax.validation.Valid;
 
 /**
  * @author EalenXie create on 2018/8/30 18:10.
- *
+ * 为远程客户端提供粗粒度的调用接口
  */
 @RestController
 public class MerchantFacade {
