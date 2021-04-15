@@ -23,19 +23,7 @@ public interface Assembler<S, T> {
      * 装配 请实现装配过程
      */
     void assemble(S source, T target);
-
-    /**
-     * 将S对象 转换成新对象T ( S -> T ), 转换过程中,执行装配过程
-     *
-     * @param source S 对象
-     * @param tClass T Class
-     * @return 转换结果对象
-     */
-    default T convert(S source, Class<T> tClass) {
-        T target = BeanUtils.instantiateClass(tClass);
-        assemble(source, target);
-        return target;
-    }
+    
 
 }
 ```
@@ -66,11 +54,13 @@ public class AssemblerFactory {
      *
      * @param assembler 装配
      * @param source    S对象
-     * @param tClass    T Class
+     * @param type      T Class
      * @return 转换出 T新对象
      */
-    public <S, T> T convert(Assembler<S, T> assembler, S source, Class<T> tClass) {
-        return assembler.convert(source, tClass);
+    public <S, T> T convert(Assembler<S, T> assembler, S source, Class<T> type) {
+        T target = BeanUtils.instantiateClass(type);
+        assemble(assembler, source, target);
+        return target;
     }
 }
 ```

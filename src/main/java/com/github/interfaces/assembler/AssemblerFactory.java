@@ -1,5 +1,7 @@
 package com.github.interfaces.assembler;
 
+import org.springframework.beans.BeanUtils;
+
 /**
  * @author EalenXie create on 2021/2/20 11:18
  * 装配工厂
@@ -21,10 +23,12 @@ public class AssemblerFactory {
      *
      * @param assembler 装配
      * @param source    S对象
-     * @param tClass    T Class
+     * @param type      T Class
      * @return 转换出 T新对象
      */
-    public <S, T> T convert(Assembler<S, T> assembler, S source, Class<T> tClass) {
-        return assembler.convert(source, tClass);
+    public <S, T> T convert(Assembler<S, T> assembler, S source, Class<T> type) {
+        T target = BeanUtils.instantiateClass(type);
+        assemble(assembler, source, target);
+        return target;
     }
 }
