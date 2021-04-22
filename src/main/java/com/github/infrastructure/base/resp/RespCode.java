@@ -82,15 +82,15 @@ public enum RespCode implements ResultCode {
     /**
      * 自定义 返回码
      */
-    private String code;
+    private final String code;
     /**
      * 返回码 描述
      */
-    private String desc;
+    private final String desc;
     /**
      * 返回码提示说明
      */
-    private String message;
+    private final String message;
 
     RespCode(String code, String desc, String message) {
         this.code = code;
